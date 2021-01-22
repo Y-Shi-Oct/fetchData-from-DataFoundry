@@ -93,4 +93,18 @@ String checkProfileItem(Object profileItem, String defaultValue) {
   return profileItem != null && ((String) profileItem).length() != 0 ? (String) profileItem : defaultValue;
 }
 
-
+/*
+or:
+boolean checkUser() {
+  // set item
+  entityDS.id(username).token(username);
+  // get item
+  Map<String, Object> result = entityDS.get();
+  //print(result);
+  if (result.isEmpty()) {
+    return false;
+  } else {
+    return true;
+  }
+}
+*/
