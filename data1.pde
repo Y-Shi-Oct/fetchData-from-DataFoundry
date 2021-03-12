@@ -32,7 +32,7 @@ String url, truevalue;
 String act;
 //PicId=totall picsum-1
 int picId=4;
-int usernumber, likely=4;
+int usernumber=0, likely=4;
 int correct, incorrect;
 Button option1, option2;
 DropdownList userlist;
@@ -103,7 +103,7 @@ void draw() {
   text("your fetch likey is "+ fetch_likely,80,94);
   
   if (millis() > 300 && frameCount % 30 == 0) {
-      fetchData();
+    //  fetchData();
     }
 }
 
@@ -139,7 +139,6 @@ void controlEvent(ControlEvent theEvent) {
 void list_user(int n) {
   usernumber = n + 1;
 }
-
 
 
 public void cat(){
